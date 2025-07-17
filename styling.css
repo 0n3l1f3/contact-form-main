@@ -1,16 +1,23 @@
-*{
-    font-family: "Karla";
-    font-size: 16px;
-    background-color:hsl(148, 38%, 91%);
-    margin: 0;
-    padding: 0;
+
+
+body{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-family: "Karla";
+  font-size: 16px;
+  /*background-color:hsl(148, 38%, 91%);*/
+  background-color: rgb(211,211,211);
+  margin: 0;
+  padding: 0; 
 }
 
 form{
     position: relative;
     margin: auto;
-    text-align: center;
-    background-color: hsl(0, 0%, 100%);
+    width:50%;
+    /*background-color: hsl(0, 0%, 100%);*/
+    background-color: grey;
     border-radius: 25px;
-    
 }
+
