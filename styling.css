@@ -1,0 +1,11 @@
+*{
+    font-family: "Karla";
+    font-size: 16px;
+    background-color:hsl(186, 15%, 59%);
+}
+
+form{
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
