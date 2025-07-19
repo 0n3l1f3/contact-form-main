@@ -19,5 +19,22 @@ form{
     /*background-color: hsl(0, 0%, 100%);*/
     background-color: grey;
     border-radius: 25px;
+    padding: 30px;
+
 }
+
+.pDetails{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  
+}
+
+
+input{
+  border-radius: 5px;
+  box-shadow: none;
+
+}
+
+
 
