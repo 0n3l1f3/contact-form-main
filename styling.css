@@ -15,10 +15,10 @@ body{
 form{
     position: relative;
     margin: auto;
-    width:50%;
+    /*width:100%;*/
     /*background-color: hsl(0, 0%, 100%);*/
     background-color: grey;
-    border-radius: 25px;
+    border-radius: 15px;
     padding: 30px;
 
 }
@@ -26,14 +26,25 @@ form{
 .pDetails{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.firstName,.lastName,.email{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+
+.email input{
+  width: 100%;
 }
 
 
 input{
   border-radius: 5px;
   box-shadow: none;
-
+  
+  height:30px;
 }
 
 
