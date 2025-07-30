@@ -35,8 +35,16 @@ form{
   grid-template-columns: repeat(1,1fr);
 }
 
+.email{
+  grid-column-start: 1;
+  grid-column-end:4;
+}
+
+label{
+  padding-bottom:10px;
+}
 .email input{
-  width: 100%;
+  width: 95%;
 }
 
 
@@ -45,6 +53,51 @@ input{
   box-shadow: none;
   
   height:30px;
+}
+
+.enquiry{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 20px;
+}
+
+.enquiry label{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  grid-column-start: 1;
+  grid-column-end:4;
+}
+
+.message{
+  display:grid;
+  grid-template-columns: repeat(1,1fr);
+  margin-top:20px;
+  grid-column-start: 1;
+  grid-column-end:4;
+}
+
+.message input{
+  width: 95%;
+}
+
+.supR, .genE {
+
+  padding-left: 20px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: thin;
+  height: 40px;
+  width: 250px;
+
+}
+
+.supR label{
+  text-align: center;
+}
+
+.supR input{
+  border-radius: 50%;
+
 }
 
 

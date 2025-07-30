@@ -38,14 +38,21 @@
     </div>
   </div>
   <div class = "enquiry">
-    <label>Query Type</label>
-    <label for = "genE">General Enquiry *</label><input id = "genE" type="checkbox" placeholder="General Enquiry">
-    <label for = "supR">Support Request *</label><input id = "supR" type ="checkbox">
+    <label>Query Type *</label>
+    <div class = "genE">
+      <input id = "genE" type="checkbox" placeholder="General Enquiry">
+      <label for = "genE">General Enquiry</label>
+    </div>
+    <div class = "supR">
+      <input id = "supR" type ="checkbox">
+      <label for = "supR">Support Request</label>
     <!--Please select a query type-->
-
-    <label for = "message">Message *</label>
-    <input id = "message" type="text">
+    </div>
+    <div class = "message">
+      <label for = "message">Message *</label>
+      <input id = "message" type="text">
     <!--This field is required-->
+    </div>
   </div>
   <input id = "agreement" type ="checkbox">
   <lable for = "agreement">I consent to being contacted by the team</lable>
