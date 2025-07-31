@@ -28,11 +28,13 @@ form{
   grid-template-columns: repeat(2,1fr);
   row-gap: 20px;
   column-gap: 20px;
+
 }
 
 .firstName,.lastName,.email{
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
+  display: flex;
+  flex-direction: column;
+  /*grid-template-columns: repeat(1,1fr);*/
 }
 
 .email{
@@ -44,7 +46,7 @@ label{
   padding-bottom:10px;
 }
 .email input{
-  width: 95%;
+  width: 100%;
 }
 
 
@@ -69,19 +71,20 @@ input{
 }
 
 .message{
-  display:grid;
-  grid-template-columns: repeat(1,1fr);
+  display: flex;
+  flex-direction: column;
   margin-top:20px;
   grid-column-start: 1;
   grid-column-end:4;
 }
 
 .message input{
-  width: 95%;
+  width: 100%;
 }
 
 .supR, .genE {
-
+  display: flex;
+  align-items: center;
   padding-left: 20px;
   border-radius: 10px;
   border-style: solid;
@@ -91,14 +94,40 @@ input{
 
 }
 
-.supR label{
-  text-align: center;
+.supR label, .genE label{
+  position: relative;
+  height:auto;
+  margin-top:30px;
+  margin-left: 15px;
 }
 
-.supR input{
-  border-radius: 50%;
-
+.supR input[type = "checkbox"]{
+  
 }
+
+.message input{
+  height:125px;
+  border-radius: 7px;;
+}
+
+.message label{
+  padding-bottom: 0;
+}
+
+.agreement{
+  display: flex;
+  margin: 30px 0 30px 0;
+  align-items: center;
+  gap:20px;
+}
+
+.sendBtn{
+  width: 100%;
+  height: 50px;
+  border-radius: 7px;
+}
+
+
 
 
 
