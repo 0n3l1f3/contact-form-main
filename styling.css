@@ -6,8 +6,8 @@ body{
   height: 100vh;
   font-family: "Karla";
   font-size: 16px;
-  /*background-color:hsl(148, 38%, 91%);*/
-  background-color: rgb(211,211,211);
+  background-color:hsl(148, 38%, 91%);
+  /*background-color: rgb(211,211,211);*/
   margin: 0;
   padding: 0; 
 }
@@ -16,24 +16,46 @@ form{
     position: relative;
     margin: auto;
     /*width:100%;*/
-    /*background-color: hsl(0, 0%, 100%);*/
-    background-color: grey;
+    background-color:hsl(0, 0%, 100%);
+    /*background-color: grey;*/
     border-radius: 15px;
     padding: 30px;
-
 }
 
+input{
+  border-radius: 5px;
+  border-style: none;
+  height:40px;
+  border: 1px solid black;
+  cursor: pointer;
+  
+}
+
+input:hover{
+  border: 2px solid hsl(169, 82%, 27%);
+}
+
+
 .pDetails{
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   row-gap: 20px;
-  column-gap: 20px;
-
 }
+
+.firstName{
+  margin: 0 5px 0 0 ;
+}
+
+.lastName{
+  margin: 0 0 0 5px ;
+}
+
 
 .firstName,.lastName,.email{
   display: flex;
   flex-direction: column;
+  
   /*grid-template-columns: repeat(1,1fr);*/
 }
 
@@ -45,22 +67,11 @@ form{
 label{
   padding-bottom:10px;
 }
-.email input{
-  width: 100%;
-}
 
-
-input{
-  border-radius: 5px;
-  box-shadow: none;
-  
-  height:30px;
-}
 
 .enquiry{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  column-gap: 20px;
 }
 
 .enquiry label{
@@ -78,9 +89,7 @@ input{
   grid-column-end:4;
 }
 
-.message input{
-  width: 100%;
-}
+
 
 .supR, .genE {
   display: flex;
@@ -91,7 +100,22 @@ input{
   border-width: thin;
   height: 40px;
   width: 250px;
+  cursor: pointer;
+}
 
+
+.supR:hover{
+  border: 2px solid hsl(169, 82%, 27%);
+}
+.genE:hover{
+  border: 2px solid hsl(169, 82%, 27%);
+}
+.supR{
+  margin: 0 0 0 5px ;
+}
+
+.genE{
+  margin: 0 5px 0 0 ;
 }
 
 .supR label, .genE label{
@@ -99,11 +123,9 @@ input{
   height:auto;
   margin-top:30px;
   margin-left: 15px;
+  cursor: pointer;
 }
 
-.supR input[type = "checkbox"]{
-  
-}
 
 .message input{
   height:125px;
@@ -112,6 +134,41 @@ input{
 
 .message label{
   padding-bottom: 0;
+}
+
+.genE input, .supR input, .agreement input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox{
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+
+.genE input:checked ~ .checkbox, .supR input:checked ~ .checkbox {
+  background-color: hsl(169, 82%, 27%);
+}
+
+
+
+.genE .checkbox:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid hsl(169, 82%, 27%);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .agreement{
@@ -125,6 +182,10 @@ input{
   width: 100%;
   height: 50px;
   border-radius: 7px;
+  border-style: none;
+  background-color: hsl(169, 82%, 27%);
+  color:white;
+  cursor: pointer;
 }
 
 
