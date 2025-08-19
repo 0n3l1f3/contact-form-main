@@ -129,14 +129,14 @@ label{
 
 .message input{
   height:125px;
-  border-radius: 7px;;
+  border-radius: 7px;
 }
 
 .message label{
   padding-bottom: 0;
 }
 
-.genE input, .supR input, .agreement input{
+.genE input, .supR input{
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -187,7 +187,13 @@ label{
   color:white;
   cursor: pointer;
 }
-
+ .alarmOff{
+  display:none;
+ }
+ .alarmOn{
+  display: block;
+  color:red
+ }
 
 
 
